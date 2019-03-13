@@ -3,30 +3,25 @@
 
 int main()
 {
-	int a,b,i,sum=0;
+	int a,i,sum=1;
 	for( a = 4 ; a <= 1000 ; a++ )
 	{
-		b=a;
-		for( i = 2 ; i <= a ; i++ )
+		sum=1;
+		for( i = 2 ; i < a ; i++ )
 		{
-			if(!(b%i))
+			if(!(a%i))
 			{
 				sum+=i;
-				b/=i;
-				i--;
 			}
 		}
-		b=a;
 		if( sum == a ) 
 		{
 			printf("%d=1",a);
-			for(i = 2 ; i <= a ; i++)
+			for(i = 2 ; i < a ; i++)
 			{
-				if(!(b%i))
+				if(!(a%i))
 				{
 					printf("+%d",i);
-					b/=i;
-					i--;
 				}
 			}
 			printf("\n");
