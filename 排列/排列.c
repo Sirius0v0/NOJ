@@ -19,16 +19,16 @@ int main()
             C/=10;
         }
         for( i=0 ; i<8 ; i++ )
-        {
-            for( j=i+1 ; j <= 9 ; j++ )
+        { 
+            for( j=i+1 ; j < 9 ; j++ )
             {
                 if( num[i] == num[j] )
                     break;
             }
             if( num[i] == num[j] )
                 break;
-        }
-        if( i==8 && j==10 )
+        } 
+        if( i==8 && j==9 )
         {
             printf("%d %d %d\n",a,b,c);
         }
